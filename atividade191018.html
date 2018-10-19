@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Atividade 05 - Seletores CSS</title>
+
+    <style type="text/css">
+        body{
+            background: #bdc3c7;
+        }h1{
+            color: #9b59b6;
+        }h2{
+            color: orange;
+        }li{
+            color:blue;
+        }p{
+            background: yellow;
+        }.oi{
+            background: white;
+        }#especial{
+            border: 2px solid blue;
+        }body div p{
+            font-size: 25px;
+        }text{
+            background: gray;
+        }input{
+            border: 3px solid red
+        }div:nth-of-type(3) p{
+            background: pink
+        }div:nth-of-type(3) p:nth-of-type(2){
+            border: 5px solid white
+        }
+/* Estilize os elementos HTML de acordo com as instruções a seguir.
+NÃO ALTERAR O HTML EXISTENTE PARA FAZER ISSO. ESCREVA APENAS CSS!
+h2 {
+    color:purple
+}
+/* Dê ao elemento <body> um background #bdc3c7 */
+
+
+/* Faça o elemento <h1> #9b59b6 */
+
+
+/* Coloque todos os elementos <h2> com cor laranja */
+
+
+/* Coloque todos os elementos <li> em azul (escolha seu próprio azul hexadecimal) */
+
+
+/* Altere o fundo em cada parágrafo para ficar amarelo  */
+
+
+/* Faça com que todas as entradas tenham uma borda vermelha de 3 pixels  ???????????????????????? */
+
+
+/* Coloque fundo branco em todos os elementos com a classe 'oi' */
+
+
+/* Coloque borda azul sólida de 2px no elemento com o ID 'especial' (escolha seu próprio RGB azul) */
+
+
+/* Aplique tamanho 25px na fonte (font-size: 25px) de todos os <p> que estão aninhados dentro de DIVs */
+
+
+/* Aplique fundo cinza nos campos tipo 'texto' */
+
+
+/* Dê aos dois <p> dentro da terceira <div> um fundo rosa */
+
+
+/* Dê ao 2º <p> dentro da 3ª <div> uma borda branca de 5px */
+
+
+/* Defina cor branca e fonte tamanho 20px no <em> do terceiro elemento <div> */
+
+
+/* DESAFIOS BONUS */
+/* Você pode precisar pesquisar alguns outros seletores e propriedades */
+
+/* Faça com que todas as caixas de seleção "marcadas" tenham uma margem esquerda de 50px */
+
+
+/* Torne os elementos <label> todos em MAIÚSCULAS sem mudar o HTML */
+
+
+/* Defina a primeira letra do elemento com o ID 'especial' na cor verde e com tamanho da fonte 100px */
+
+
+/* Faça com que a cor do elemento <h1> mude para azul quando passar o mouse sobre o elemento */
+
+
+/* Faça com que o elemento <a> já visitado seja exibido na cor cinza */
+
+
+</style>
+
+</head>
+<body>
+
+	<h1>Exercício sobre seletores</h1>
+
+	<p>PARAGRAPH NOT INSIDE A DIV</p>
+
+	<div>
+		<p class="oi">Sou um parágrafo com uma classe.</p>
+
+		<p id="especial">Eu sou um parágrafo com um ID</p>
+
+		<h2>Eu sou um cabeçalho H2</h2>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel tristique arcu, nec convallis lacus. Donec in elementum lacus, a pulvinar mauris. Quisque eu nunc vitae lorem egestas volutpat quis sed ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean vulputate consequat blandit. Nulla dapibus mauris nec consectetur condimentum. Fusce molestie tortor at sem posuere consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a eros placerat, ultrices neque et, porttitor enim. Donec vitae orci vulputate, eleifend ante a, molestie est. Vestibulum vestibulum dignissim diam quis gravida. Curabitur molestie, dolor ut mollis sollicitudin, ligula magna viverra neque, sed malesuada odio mauris et ex.</p>
+
+	</div>
+
+	<div>
+		<h2>Lista de tarefas</h2>
+		<ul>
+			<li>Passear com o cusco <input type="checkbox" checked> </li>
+			<li>Alimentar o cusco <input type="checkbox" checked> </li>
+			<li>Dar banho no cusco <input type="checkbox"></li>
+		</ul>
+	</div>
+
+	<div>
+		<h2>Sou um outro cabeçalho H2</h2>
+
+		<p>Vestibulum ac sem eget leo placerat congue in quis dui. Nam aliquet urna eu diam congue, et dictum mauris varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In et ultrices mauris. Morbi mattis in magna quis pulvinar. In pellentesque aliquet commodo. Nunc id mattis est, sit amet scelerisque mi. Duis elementum neque elit, pharetra vulputate libero fringilla quis. Duis molestie leo quis eleifend vehicula.</p>
+
+		<p>Sou o segundo parágrafo dentro desta DIV</p>
+	</div>
+
+	<p>PARÁGRAFO QUE NÃO ESTÁ DENTRO DE UMA DIV</p>
+
+	<div>
+		<h2>Um simples cabeçalho H2</h2>
+
+		<p>Suspendisse ullamcorper, diam a convallis mattis, quam augue interdum ipsum, nec dapibus purus diam ut purus. Mauris finibus magna sit amet purus faucibus iaculis. Quisque ipsum augue, congue nec nulla et, luctus condimentum lorem. Quisque blandit diam sed pharetra viverra. Proin semper dictum diam in ullamcorper. Phasellus vitae pretium ligula, sit amet commodo sem. Mauris vel nisl et tellus posuere tristique fringilla eget nunc. Praesent ullamcorper nibh id risus pretium bibendum. Curabitur ac nibh eget tortor vestibulum interdum. Donec ultrices nibh vitae mi faucibus porta.</p>
+
+		<p>Um último parágrafo!</p>
+
+		<a href="https://www.facebook.com">Eu sou um link para o Facebook</a>
+		<a href="https://www.twitter.com">Eu sou um link para o Twitter</a>
+		<br>
+		<input type="text" name="nome" /><label> Nome</label><br/>
+		<input type="password" name="senha" /><label> Senha</label><br/>
+	</div>
+
+	<p>PARÁGRAFO FORA DE QUALQUER DIV</p>
+
+</body>
+</html>
