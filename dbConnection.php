@@ -3,10 +3,10 @@ $ambiente = false;
 
 if ($ambiente) { // Ambiente de Produção
 
-	$HostName = "";
-	$HostUser = "";
+	$HostName = "localhost";
+	$HostUser = "root";
 	$HostPass = "";
-	$DatabaseName = "";
+	$DatabaseName = "dados_pradoar";
 
 } else { // Ambiente de Desenvolvimento
 
